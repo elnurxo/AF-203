@@ -1,0 +1,15 @@
+*{
+    color: blue;
+}
+#desc{
+    color: green;
+}
+.desc{
+    color: red;
+}
+p{
+    color: red;
+}
+span#address{
+    color: red;
+}

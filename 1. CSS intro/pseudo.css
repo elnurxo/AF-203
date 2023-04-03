@@ -1,0 +1,65 @@
+.link{
+    border: 1px solid red;
+}
+body{
+    height: 200vh;
+}
+
+li:nth-child(2){
+    color: green;
+    background-color: red;
+}
+.box{
+    border: 1px solid blue;
+}
+.box p:nth-of-type(odd){
+    color: red;
+}
+.box button:nth-of-type(2){
+    background-color: green;
+}
+p:nth-child(2){
+    color: chocolate;
+}
+h4:only-of-type{
+    color: seagreen;
+}
+p:only-child{
+    color: red;
+}
+/* a:visited{
+    background-color: red;
+} */
+p::selection{
+    background-color: red;
+    color: black;
+}
+ul{
+    list-style: square;
+}
+li::marker{
+    color: blue;
+}
+p::first-line{
+    color: aquamarine;
+}
+
+.link{
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+.link::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: black;
+    transition: .4s;
+}
+.link:hover::after{
+    width: 80px;
+}
+.sub:hover+.baku{
+    color: red !important;
+}
