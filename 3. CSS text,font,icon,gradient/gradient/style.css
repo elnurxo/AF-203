@@ -1,0 +1,27 @@
+#slider{
+    border: 2px solid black;
+    height: 60vh;
+    width: 70%;
+    margin: 0 auto;
+    /* background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet); */
+    /* background-image: repeating-radial-gradient(circle,yellow,orange,black 90%); */
+    /* background-image: repeating-conic-gradient(red 10%, yellow 20%, green 15%); */
+    background-image:
+    linear-gradient(to right, rgba(255, 0, 0, 0.452),rgba(11, 117, 11, 0.349)), url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/8a6a68144592045.628efcd3e77b5.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: .5s;
+}
+#slider:hover{
+    background-image:
+    linear-gradient(to right, rgba(255, 0, 0, 0),rgba(11, 117, 11, 0)), url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/8a6a68144592045.628efcd3e77b5.jpg");
+}
+/* #slider::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.463);
+} */

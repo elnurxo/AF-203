@@ -1,0 +1,29 @@
+.margin{
+    width: 700px;
+    height: 550px;
+    background-color: orange;
+    margin: 30px auto;
+}
+.border{
+    width: 600px;
+    height: 450px;
+    margin: 20px auto;
+    background-color: rgb(256,256,0);
+}
+.padding{
+    width: 500px;
+    height: 400px;
+    margin: 10px auto;
+    background-color: greenyellow;
+}
+.content{
+    width: 400px;
+    height: 350px;
+    margin: 10px auto;
+    background-color: rgb(173,217,230);
+    background-image: url("./imagetest.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

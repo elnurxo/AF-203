@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Poppins Bolder;
+    src: url("./fonts/Poppins-ExtraBold.ttf");
+}
+
+article{
+    border: 1px solid red;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0px 30px;
+    height: 600px;
+}
+article p{
+    text-align:justify;
+    vertical-align:middle;
+    /* left to right */
+    /* direction: rtl;
+    unicode-bidi:bidi-override; */
+    font-family:Poppins;
+    font-weight: 400;
+    /* font-style: italic; */
+    /* font-weight: 700;
+    font-style: italic; */
+    
+}
+article ul li{
+    line-height: 30px;
+}
+article ul li svg{
+    display: inline;
+    width: 10px;
+    height: 10px;
+    fill: red;
+}
+article a{
+    /* text-decoration-line:line-through;
+    text-decoration-color:red;
+    text-decoration-style:solid;
+    text-decoration-thickness:10px; */
+    text-decoration: underline red solid 2px;
+    text-transform:capitalize;
+    /* letter-spacing: -10px; */
+    /* word-spacing: 10px; */
+    transition: 1s;
+    /* letter-spacing: 1px; */
+}
+/* article a:hover{
+    letter-spacing: 10px;
+} */
+h3:last-of-type{
+    text-shadow: 1px 1px 0.5em red;
+}
