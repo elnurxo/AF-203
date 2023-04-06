@@ -1,0 +1,46 @@
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    background-color: red;
+    margin-left: calc(50% - 50px);
+    border: 2px solid blue;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.another-box{
+    /* width: 0px;
+    height: 0px;
+    border: 100px solid transparent;
+    border-top: 1;
+    border-left: 100px solid red; */
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(60% 0, 37% 73%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-image: linear-gradient(to right, red,green,blue);
+}
+button{
+    transition: 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    display: inline-block;
+    height: 20px;
+    margin-top: calc(50% - 10px);
+}
+.box:hover>button{
+   opacity: 1;
+   visibility: visible;
+}
+span{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid greenyellow;
+    width: 100px;
+    height: 100px;
+}
+p{
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+/* display - block, inline, inline-block, none */
