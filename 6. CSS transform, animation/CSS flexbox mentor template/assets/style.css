@@ -1,0 +1,197 @@
+/* #5fcf80 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0px;
+    z-index: 100;
+    background-color: white;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .nav__logo h2{
+    text-transform: uppercase;
+    color: #5fcf80;
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+header nav .link__btn{
+    display: flex;
+    align-items: center;
+}
+header nav .link__btn .nav__link{
+    display: flex;
+    list-style: none;
+}
+header nav .link__btn .nav__link>li{
+    font-family: Poppins;
+    padding: 10px 0 10px 30px;
+}
+header nav .link__btn .nav__link li:hover>a{
+    color: #5fcf80;
+}
+header nav .link__btn .nav__link li a{
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;   
+    transition: .4s;
+}
+header nav .link__btn .nav__btn{
+    color: white;
+    background-color: #5fcf80;
+    border-radius: 50px;
+    padding: 8px 25px;
+    margin-left: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    transition: .4s;
+}
+header nav .link__btn .nav__btn:hover{
+    background-color: #377d4c;
+}
+.drop-down{
+    position: relative;
+}
+.drop-down .drop-down-list{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 15px 5px;
+    list-style: none;
+    width: 210px;
+    border-radius: 7px;
+    position: absolute;
+    top: 70px;
+    transition: .2s;
+    visibility: hidden;
+    opacity: 0;
+}
+.drop-down .drop-down-list li{
+    padding: 10px 0 10px 10px;
+}
+.drop-down .drop-down-list li a{
+    font-size: 15px;
+}
+.drop-down:hover>.drop-down-list{
+    top: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+.deep-drop-down-link{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deep-drop-down-link i{
+    margin-right: 15px;
+}
+.deep-drop-down ul{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 15px 5px;
+    list-style: none;
+    width: 210px;
+    border-radius: 7px;
+    top: 20%;
+    position: absolute;
+    left: 70%;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.deep-drop-down:hover>ul{
+    left: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.hamburger-wrapper i{
+    margin-left: 20px;
+    font-size: 22px;
+}
+.hamburger-wrapper{
+    display: none;
+}
+#hero{
+    background-image: url("https://bootstrapmade.com/demo/templates/Mentor/assets/img/hero-bg.jpg");
+    background-position: top center;
+    padding: 200px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#hero article{
+    position: relative;
+    z-index: 1;
+}
+#hero article h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+#hero article p{
+    font-family: Raleway;
+    color: #eee;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+#hero article a{
+    display: inline-block;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px 35px;
+    margin-top: 30px;
+    transition: .4s;
+}
+#hero article a:hover{
+    background-color: #5fcf80;
+    border: 2px solid #5fcf80;
+}
+@media only screen and (max-width:992px){
+    .nav__link{
+        display: none !important;
+    }
+    .hamburger-wrapper{
+        display: block;
+    }
+    #hero{
+        background-size: cover;
+    }
+    #hero article h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero article p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
