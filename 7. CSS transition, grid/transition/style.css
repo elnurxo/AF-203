@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 60%;
+    border: 2px solid black;
+    height: 400px;
+}
+[class|="box"]{
+    width: 100px;
+    height: 100px;
+}
+.box-1{
+    background-color: green;
+    transition: width 3s linear;
+}
+.box-1:hover{
+    width: 100%;
+}
+.box-2{
+    background-color: red;
+    transition: width 3s ease-in;
+}
+.box-2:hover{
+    width: 100%;
+}
+.box-3{
+    background-color: blue;
+    transition: width 3s ease-out;
+
+}
+.box-3:hover{
+    width: 100%;
+}
+.box-4{
+    background-color: purple;
+    transition: width 3s cubic-bezier(.25,1.63,.72,-0.87);
+
+}
+.box-4:hover{
+    width: 100%;
+}
