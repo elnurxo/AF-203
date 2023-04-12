@@ -1,0 +1,10 @@
+//mixins
+@mixin btn($bgc,$bgcHover,$brsize:1px,$brcolor:black){
+    padding: 10px 20px;
+    border: $brsize solid $brcolor;
+    background-color: $bgc;
+    transition: .4s;
+    &:hover{
+        background-color: $bgcHover;
+    }
+}

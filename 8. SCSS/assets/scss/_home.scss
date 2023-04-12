@@ -1,0 +1,24 @@
+
+.wrapper{
+    @extend %center-div;
+    width: 60%;
+    height: 400px;
+    margin: 30px auto;
+    border: 2px solid black;
+
+    .btn{
+        @extend %btn;
+        margin-right: 10px;
+    }
+    .btn-primary{
+        @include btn($brsize:10px,$brcolor:black,$bgc:blue,$bgcHover:red);
+    }
+    .btn-success{
+        @include btn($primary-color,blue,5px,black);
+
+    }
+    .btn-danger{
+        @include btn($primary-color,blue,20px,aqua);
+
+    }
+}
