@@ -1,0 +1,48 @@
+header{
+    padding: 20px 0px;
+    background-color: $white;
+    box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .nav{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        &__logo{
+            color: $green;
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-family: $main-font;
+        }
+        &-link__btn{
+            display: flex;
+            align-items: center;
+            &>ul{
+                display: flex;
+                @include for-tablet{
+                    display: none;
+                }
+                li{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .hamburger-wrapper{
+            @extend %div-center;
+            display: none;
+            @include for-tablet{
+                display: flex;
+            }
+            i{
+                font-size: 30px;
+                margin-left: 20px;
+            }
+        }
+    }
+}

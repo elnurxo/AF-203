@@ -1,0 +1,33 @@
+
+@mixin button($bgc,$bgcHover,$color){
+    margin-left: 22px;
+    background: $bgc;
+    color: $color;
+    border-radius: 50px;
+    padding: 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: none;
+    transition: .4s linear;
+    &:hover{
+        background-color: $bgcHover;
+    }
+}
+
+@mixin for-phone {
+    @media (max-width: $phone-breakpoint) { @content; }
+  }
+  @mixin for-tablet {
+    @media (max-width: $desktop-breakpoint) { @content; }
+  }
+  @mixin for-laptop {
+    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint) { @content; }
+  }
+  @mixin for-large-desktop {
+    @media (max-width: $large-desktop-breakpoint) and (min-width: $desktop-breakpoint) { @content; }
+  }
+  @mixin for-xxl-large-desktop {
+    @media (min-width: $xxl-large-desktop-breakpoint) { @content; }
+  }

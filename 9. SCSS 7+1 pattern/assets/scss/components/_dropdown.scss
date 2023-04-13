@@ -1,0 +1,19 @@
+.drop-down-li{
+    position: relative;
+    &:hover>.drop-down{
+        top: 40px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.drop-down{
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    width: 200px;
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}

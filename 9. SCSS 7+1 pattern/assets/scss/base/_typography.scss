@@ -1,0 +1,20 @@
+header li {
+    transition: .4s linear;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 10px 30px;
+        font-family: $main-font;
+        font-size: 15px;
+        font-weight: 500;
+        white-space: nowrap;
+        transition: 0.3s;
+        color: $gray;
+    }
+    &:hover>a {
+        color: $green;
+    }
+
+
+}
