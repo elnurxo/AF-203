@@ -1,0 +1,51 @@
+.my-card{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.my-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: .1s linear;
+}
+.size{
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    transition: .2s linear;
+}
+.my-card:hover .size{
+    bottom: 5%;
+}
+.my-card:hover img{
+    filter: brightness(100%);
+}
+.remove{
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    z-index: 999;
+}
+.drop-zone{
+    width: 300px;
+    height: 100px;
+    border: 2px dotted grey;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.drop-zone span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: gray;
+}

@@ -71,6 +71,15 @@
         </form>
     </div>
 
+    <!--delete modal -->
+    <div id="delete-product-modal">
+        <h3 class="text-center fw-bold">Are you sure?</h3>
+        <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn-success yes mx-3">YES</button>
+        <button class="btn btn-danger cancel">CANCEL!</button>
+        </div>
+    </div>
+
     <hr>
     <h2 class="text-center">To Do</h2>
     <div class="container">
@@ -81,8 +90,9 @@
                     <input class="form-control" id="to-do" type="text" placeholder="Enter To Do...">
                     <button class="btn btn-outline-primary add mt-2 mx-auto d-block">ADD</button>
                 </form>
+                <input class="form-control mt-2" type="text" id="search" placeholder="search for todos...">
                 <ul class="list-group mt-2 todos">
-                   
+
                 </ul>
             </div>
         </div>

@@ -17,6 +17,21 @@ body{
     visibility: hidden;
     opacity: 0;
 }
+#delete-product-modal{
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 100;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .3s ease-in-out;
+    transform: translate(-50%,-50%) scale(0);
+    visibility: hidden;
+    opacity: 0;
+}
 .modal-body::after{
     content: '';
     position: absolute;
