@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgb(233,237,216);
+    background: linear-gradient(90deg, rgba(233,237,216,1) 0%, rgba(185,125,125,1) 30%, rgba(79,61,215,1) 60%, rgba(16,39,68,1) 82%, rgba(0,4,5,1) 100%);
+}
+nav{
+    height: 100%;
+}
+.card-img-top{
+    height: 300px;
+    object-fit: contain;
+}
+.inner-div{
+    height: 100%;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.links{
+    list-style: none;
+    margin: 0;
+}
+.links li{
+    margin-right: 10px;
+}
+.links a{
+    color: white;
+}
