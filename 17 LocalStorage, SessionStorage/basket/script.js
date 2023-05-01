@@ -31,6 +31,27 @@ let products = [
 let productsWrapper = document.querySelector(".products-wrapper");
 let buttons = [];
 
+let search = document.querySelector("#search-product");
+
+search.addEventListener("keyup",(e)=>{
+    productsWrapper.innerHTML = "";
+    products.filter((product)=>{
+        if (product.name.toLowerCase().trim().includes(e.target.value.toLowerCase().trim())) {
+            productsWrapper.innerHTML += `<div class="col-3">
+            <div class="card" data-id="${product.id}" style="width: 18rem;">
+                <img class="card-img-top" src="${product.imgURL}" alt="${product.name}">
+                <div class="card-body">
+                  <h6 class="card-title"><span>Name: </span> <span id="name" class="fw-bold">${product.name}</span></h6>
+                  <p class="card-text"><span>Price: </span> <span id="price">${product.price}</span> <span class="fw-bold">$</span></p>
+                  <p class="card-text"><span>Description: </span> <span id="desc">${product.description}</span></p>
+                  <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+        </div>`
+        }
+    })
+})
+
 document.addEventListener("DOMContentLoaded",()=>{
     if (!localStorage.getItem("basket")) {
         localStorage.setItem("basket",JSON.stringify([]));
