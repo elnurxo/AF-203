@@ -2,6 +2,7 @@ import { useState } from "react"
 import { data } from "./users.js";
 
 const Login = ({setIsLogged,user,setUser}) => {
+  
   function handleSubmit(e){
     e.preventDefault();
     let found = data.find((item)=>item.username==user.username && item.password == user.password);
