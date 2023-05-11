@@ -1,0 +1,14 @@
+.btn{
+    color: white;
+    background-color:pink;
+}
+.btn:hover{
+    background-color: purple;
+}
+.btn1{
+    padding: 10px 20px;
+}
+.btn-primary{
+    color: white;
+    background-color: blue;
+}
