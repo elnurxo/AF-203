@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "name": "coca cola",
+      "price": "2",
+      "id": "8tRQEH0i0aNB4DXVX7Tgg"
+    },
+    {
+      "name": "code academy",
+      "price": "3",
+      "id": "fVy58OaZ6KIApgCYU15bB"
+    },
+    {
+      "name": "cappy 2",
+      "price": "1.7",
+      "id": "e6D74nOR75RhtbPD_SGcS"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "elnurxo",
+      "password": "Admin123",
+      "isAdmin": false
+    },
+    {
+      "id": 2,
+      "username": "elnurxo_admin",
+      "password": "Admin123",
+      "isAdmin": true
+    }
+  ]
+}
