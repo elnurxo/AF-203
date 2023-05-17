@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getAllProducts } from '../../../api/requests'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const ProductsUser = () => {
   const[products,setProducts] = useState([]);
@@ -11,6 +12,11 @@ const ProductsUser = () => {
   })
   return (
    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta author="Elnur Khalilov" description="this is home page"/>
+        <title>Dribble | Products</title>
+      </Helmet>
     <div>Products</div>
     <ul>
         {products && products.map((product)=>{
