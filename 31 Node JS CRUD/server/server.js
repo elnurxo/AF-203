@@ -15,6 +15,12 @@ const ARTISTS = [
     age: 24,
     imageURL: "https://liftedasia.com/assets/content_images/steve-660x440.webp",
   },
+  {
+    id: 2,
+    name: "Mac Miller",
+    age: 22,
+    imageURL: "https://m.media-amazon.com/images/M/MV5BZWU0ODA0MTktZjAyOS00ZDdkLWFhMDEtZDlmYjU3MjM0YzA4XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg",
+  },
 ];
 
 app.get("/api", (req, res) => {

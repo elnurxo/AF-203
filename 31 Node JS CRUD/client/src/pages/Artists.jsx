@@ -37,14 +37,16 @@ const Artists = () => {
   }
   return (
     <div style={{ width: "80%", margin: "50px auto" }}>
-     <TextField onChange={(e)=>{
+      <div style={{display:'flex',alignItems:'center',marginBottom:'15px'}}>
+      <TextField style={{alignSelf:'center'}} onChange={(e)=>{
         getAllArtists(e.target.value).then(res=>{
           setArtists(res);
         })
-     }} style={{marginBottom:'15px'}} id="outlined-basic" label="Search Artist" variant="outlined" />
-     <Button onClick={()=>{
+     }} id="outlined-basic" label="Search Artist" variant="outlined" />
+      <Button style={{alignSelf:'center', marginLeft:'12px',background:'linear-gradient(90deg, rgba(48,78,45,1) 0%, rgba(22,110,65,1) 53%, rgba(19,116,25,1) 100%)'}}  onClick={()=>{
         setArtists([...artists.sort((a,b)=>a.age-b.age)])
      }} variant="contained" color="info">Sort By Age</Button>
+      </div>
       <Grid  container spacing={2}>
         {artists && artists.map((artist)=>{
           return <Grid key={artist.id} item lg={3} md={6} sm={12}>
